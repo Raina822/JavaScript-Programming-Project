@@ -3,5 +3,10 @@
 ## D280 – JAVASCRIPT PROGRAMMING
 Welcome to JavaScript Programming! 
 For specific task instructions and requirements for this assessment, please refer to the course page.
- 
 
+# FinalProjecct
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Name: Raina Schwanz
+Student ID: 000859696
+Angular version: 19.2.13
