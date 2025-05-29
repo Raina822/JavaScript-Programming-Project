@@ -19,7 +19,7 @@ export class WorldComponent implements OnInit {
   countryCapital: string | null = null;
   countryRegion: string | null = null;
   countryIncomeLevel: string | null = null;
-  countryAdditionalFact: string | null = null;
+  countryAbv: string | null = null;
   countryId: string | null = null;
   countryCode: string | null = null;
   countryLatitude: string | null = null;
@@ -56,7 +56,7 @@ export class WorldComponent implements OnInit {
     this.countryName = target.getAttribute('name');
     this.countryId = target.getAttribute('id');
     if (this.countryId === clickedCountryId) {
-      target.style.fill = 'rgb(224, 42, 215)';
+      target.style.fill = 'rgb(34, 244, 252)';
     } 
     if (this.countryId) {
       this.fetchInfoAboutCountry(this.countryId)
@@ -87,7 +87,7 @@ export class WorldComponent implements OnInit {
           this.WorldbankService.getAdditionalInfo(this.countryId).subscribe({
             next: (data:any) => {
               const allData = data[1][0];
-              this.countryAdditionalFact = allData.countryiso3code;
+              this.countryAbv = allData.countryiso3code;
             }
           }) 
     }

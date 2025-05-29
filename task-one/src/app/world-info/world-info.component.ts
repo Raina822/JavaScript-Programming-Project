@@ -16,7 +16,7 @@ export class WorldInfoComponent {
   @Input() countryCapital: string | null = null;
   @Input() countryRegion: string | null = null;
   @Input() countryIncomeLevel: string | null = null;
-  @Input() countryAdditionalFact: string | null = null;
+  @Input() countryAbv: string | null = null;
   @Input() countryId: string | null = null;
   @Input() countryLatitude: string | null = null;
   @Input() countryLongitude: string | null = null;
