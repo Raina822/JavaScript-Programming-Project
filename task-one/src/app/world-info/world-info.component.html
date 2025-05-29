@@ -1,1 +1,11 @@
-<p>world-info works!</p>
+
+<div class="country-info">
+    <p *ngIf="countryName">Country Name: {{ countryName }}</p>
+    <p *ngIf="countryCapital">Capital: {{countryCapital}}</p>
+    <p *ngIf="countryRegion">Region: {{countryRegion}}</p>
+    <p *ngIf="countryIncomeLevel">Income Level: {{countryIncomeLevel}}</p>
+    <p *ngIf="countryLongitude">Longitude: {{countryLongitude}}</p>
+    <p *ngIf="countryLatitude">Latitude: {{countryLatitude}}</p>
+    <p *ngIf="countryAdditionalFact">Country Code: {{countryAdditionalFact}}</p> 
+    
+</div>
